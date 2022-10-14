@@ -1,0 +1,33 @@
+:root{
+--primary-text-color:#FCFCFC;
+--secondary-text-color: #131313;
+--white-color: #fff;
+--accent-color: #F8D24E;
+--address-text-color:#D6936D;
+--time-text-color: #ABABAB;
+--footer-text-color:#7A7A7A;
+
+ /* Background colors */
+--primary-background-color: #84A178;
+--products-bg-green:#AEC6A5;
+--products-bg-yellow: #EFD478;
+--products-bg-brown: #D6936D;
+--products-ellipse-green: rgba(156, 190, 143, 0.7);
+--products-ellipse-yellow: rgba(248, 210, 78, 0.7);
+--products-ellipse-brown: rgba(213, 117, 63, 0.7);
+--products-ellipse-grey: #D9D9D9;
+
+/* Modal */
+--modal-bg-color:#FCFCFC;
+--modal-input-bg:rgba(248, 210, 78, 0.1);
+--modal-border-color:#84A178;
+--modal-ellipse:#9CBE8F;
+
+/* button color */
+--default-btn:#F8D24E;
+--hover-btn: #0A8817;
+--disabled-btn: #ABABAB;
+
+ /* Timing */
+--timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
