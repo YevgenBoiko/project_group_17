@@ -83,7 +83,7 @@
   width: 280px;
   height: 299px;
   background-color: var(--accent-color);
-  background-image: url(../image/about-images/cow-1x.png);
+  background-image: url(../image/about-images/cow-tablet-1x.png);
   background-size: contain;
   background-position: 0 20px;
   background-repeat: no-repeat;
@@ -107,6 +107,29 @@
 
   @media screen and(max-width:767px) {
     margin-bottom: 40px;
+  }
+}
+@media screen and(min-device-pixel-ratio: 2),
+  screen and(-webkit-min-device-pixel-ratio: 2),
+  screen and(-o-min-device-pixel-ratio: 2),
+  screen and(min-resolution:192dpi),
+  screen and(min-resolution:2dppx) {
+  .feature__bg-round {
+    background-image: url(../image/about-images/cow-tablet-2x.png);
+  }
+}
+@media screen and(min-width:1200px) {
+  .feature__bg-round {
+    background-image: url(../image/about-images/cow-desktop-1x.png);
+  }
+  @media screen and(min-device-pixel-ratio: 2),
+    screen and(-webkit-min-device-pixel-ratio: 2),
+    screen and(-o-min-device-pixel-ratio: 2),
+    screen and(min-resolution:192dpi),
+    screen and(min-resolution:2dppx) {
+    .feature__bg-round {
+      background-image: url(../image/about-images/cow-desktop-2x.png);
+    }
   }
 }
 .feature__list {
@@ -160,7 +183,9 @@
   }
 }
 .feature__button {
-  display: block;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   width: 164px;
   height: 42px;
   background-color: var(--accent-color);
@@ -189,106 +214,4 @@
 }
 .button__icon {
   margin-left: 5px;
-}
-.description {
-  padding-top: 42px;
-
-  @media screen and(min-width:1200px) {
-    padding-top: 60px;
-  }
-}
-.description__list {
-  @media screen and (min-width: 768px) {
-    display: flex;
-    justify-content: space-between;
-  }
-}
-
-.description__item {
-  &:not(:last-child) {
-    margin-bottom: 28px;
-    @media screen and (min-width: 768px) {
-      margin-bottom: 0;
-    }
-  }
-}
-
-.description__icon-bgc {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-
-  margin-left: auto;
-  margin-right: auto;
-  width: 50px;
-  height: 50px;
-  background-color: var(--accent-color);
-  border-radius: 50%;
-  margin-bottom: 16px;
-
-  @media screen and(min-width:768px) {
-    margin-bottom: 32px;
-  }
-
-  @media screen and(min-width:1200px) {
-    margin-bottom: 40px;
-  }
-}
-.description__qty {
-  width: 98px;
-  margin-left: auto;
-  margin-right: auto;
-
-  font-weight: 700;
-  font-size: 36px;
-  line-height: 1.17;
-
-  text-align: center;
-  letter-spacing: 0.04em;
-  text-transform: uppercase;
-
-  color: #fcfcfc;
-
-  margin-bottom: 18px;
-
-  @media screen and (min-width: 768px) {
-    width: 152px;
-    font-size: 48px;
-    line-height: 1.23;
-  }
-
-  @media screen and(min-width:1200px) {
-    width: 368px;
-    font-size: 58px;
-    margin-bottom: 16px;
-  }
-}
-.description__text {
-  width: 230px;
-  margin-left: auto;
-  margin-right: auto;
-
-  font-weight: 700;
-  font-size: 12px;
-  line-height: 1.67;
-
-  text-align: center;
-
-  color: #fcfcfc;
-
-  @media screen and (min-width: 768px) {
-    width: 152px;
-
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 1.71;
-  }
-
-  @media screen and(min-width:1200px) {
-    width: 368px;
-
-    font-size: 16px;
-
-    padding: 0 15px;
-  }
 }
