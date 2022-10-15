@@ -1,7 +1,62 @@
 <div class="modal">
-   <div class="modal__window">
-    <button data-modal-close class="modal__btn-x" type="button" data-modal-close>
-        
+  <div class="modal__window">
+    <button
+      data-modal-close
+      class="modal__btn-x"
+      type="button"
+      data-modal-close
+    >
+      <svg
+        class="modal__icon-x"
+        width="11"
+        ,
+        height="11"
+        id="icon-close"
+        viewBox="0 0 32 32"
+      >
+        <path
+          d="M17.253 16l7.37-7.37c0.13-0.154 0.209-0.354 0.209-0.573 0-0.491-0.398-0.89-0.89-0.89-0.219 0-0.42 0.079-0.575 0.211l0.001-0.001-7.368 7.37-7.37-7.378c-0.159-0.147-0.372-0.237-0.606-0.237-0.493 0-0.893 0.4-0.893 0.893 0 0.234 0.090 0.447 0.237 0.606l-0.001-0.001 7.378 7.37-7.376 7.368c-0.194 0.164-0.316 0.408-0.316 0.68 0 0.491 0.398 0.89 0.89 0.89 0.272 0 0.515-0.122 0.678-0.314l0.001-0.001 7.376-7.37 7.37 7.37c0.155 0.133 0.357 0.214 0.579 0.214 0.491 0 0.89-0.398 0.89-0.89 0-0.222-0.081-0.424-0.215-0.58l0.001 0.001-7.37-7.368z"
+        ></path>
+        >
+      </svg>
+      <use href="/src/image/icons.svg#close-modal"></use>
     </button>
-   </div>
+    <form class="form">
+      <p class="form__titel">Buy now</p>
+      <ul class="group-list">
+        <li class="group__item">
+          <div class="group__img"></div>
+          <div class="group__date-1">
+            <p class="group__titel">Ice cream</p>
+          </div>
+        </li>
+        <li class="group__item">
+          <div class="group__date-2">
+            <p class="group__titel">Ice coffee</p>
+          </div>
+        </li>
+        <li class="group__item">
+          <div class="group__date-3">
+            <p class="group__titel">Milkshake</p>
+          </div>
+        </li>
+      </ul>
+
+      <label class="form__field">
+        <span class="form__label">Name</span>
+        <input class="form__input" type="text" name="name" required />
+      </label>
+
+      <label class="form__field">
+        <span class="form__label">Phone</span>
+        <input class="form__input" type="tel" name="phone" required />
+      </label>
+
+      <label class="form__field">
+        <span class="form__label">Comment</span>
+        <textarea class="form__feedback" name="feedback"></textarea>
+      </label>
+      <button class="modal__btn btn" type="submit">Submit</button>
+    </form>
+  </div>
 </div>
