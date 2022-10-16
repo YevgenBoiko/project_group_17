@@ -7,6 +7,9 @@
   background-color: var(--primary-background-color);
 
   @media screen and(min-width:768px) {
+    padding-bottom: 53px;
+  }
+  @media screen and(min-width:1200px) {
     padding-bottom: 74px;
   }
 }
@@ -63,6 +66,8 @@
 .about__feature {
   @media screen and(min-width:768px) {
     display: flex;
+    margin: 0;
+    padding: 0;
   }
   @media screen and (min-width: 1200px) {
     align-items: center;
