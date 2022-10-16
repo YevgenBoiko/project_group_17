@@ -318,23 +318,6 @@
   }
 }
 
-@-webkit-keyframes ball {
-  0% {
-    transform: translatey(0);
-  }
-  100% {
-    transform: translatey(50px);
-  }
-}
-
-@keyframes ball {
-  0% {
-    transform: translatey(0);
-  }
-  100% {
-    transform: translatey(50px);
-  }
-}
 .visually-hidden {
   position: absolute;
   white-space: nowrap;

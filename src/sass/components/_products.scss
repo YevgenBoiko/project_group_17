@@ -274,6 +274,7 @@
   transform: translate(-50%, -50%);
   border-radius: 50%;
   background-size: 100%;
+
   //--mobile screen
   top: -12px;
   width: 200px;
@@ -290,6 +291,7 @@
 }
 .products__item--icecream::after {
   content: '';
+
   //--mobile screen
   background-image: url('/src/image/products/ice-cream--200х200.png');
   background-image: -webkit-image-set
@@ -370,15 +372,5 @@
       background-image: -webkit-image-set
         (url('/src/image/products/milkshakes--300х300@2x.webp') 2x);
     }
-  }
-}
-
-@keyframes ball {
-  0% {
-    transform: translatey(0);
-  }
-
-  100% {
-    transform: translatey(50px);
   }
 }
