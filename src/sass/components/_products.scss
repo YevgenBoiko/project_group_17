@@ -6,12 +6,14 @@
   background-image: url('/src/image/products/background_1_sm.jpg'),
     url('/src/image/products/background_2_sm.jpg'),
     url('/src/image/products/background_3_sm.jpg');
-    @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
-      background-image:url('/src/image/products/background_1_sm@2x.jpg'),
+
+  @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    background-image: url('/src/image/products/background_1_sm@2x.jpg'),
       url('/src/image/products/background_2_sm@2x.jpg'),
       url('/src/image/products/background_3_sm@2x.jpg');
-
-
+  }
 }
 .products__cont {
   padding-top: 60px;
@@ -47,6 +49,10 @@
 }
 .products__item {
   position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
   max-width: 280px;
   height: 420px;
   padding: 123px 40px 0 40px;
@@ -83,10 +89,12 @@
 
   // margin-bottom: 70px;
 }
+//кнопка
 .products__btn {
+  margin-top: auto;
   display: inline-flex;
   align-items: center;
-  width: 85px;
+  width: 100px;
   height: 40px;
 }
 
@@ -175,4 +183,4 @@
   background-image: url('/src/image/products/milkshakes--200х200.png');
   background-image: -webkit-image-set
     (url('/src/image/products/milkshakes--200х200.webp') 1x);
-  }
+}
