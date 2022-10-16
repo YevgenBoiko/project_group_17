@@ -90,7 +90,7 @@
     ),
     var(--products-ellipse-grey);
   box-shadow: 0px 8px 30px rgba(153, 114, 23, 0.25);
-  border-radius: 250px;
+  border-radius: 140px;
 
   margin-left: auto;
   margin-right: auto;
@@ -98,11 +98,13 @@
   @media screen and(min-width:768px) {
     width: 335px;
     height: 330px;
+    border-radius: 165px;
   }
 
   @media screen and(min-width:1200px) {
     width: 500px;
     height: 500px;
+    border-radius: 250px;
 
     margin-right: 100px;
   }
@@ -117,13 +119,15 @@
 
   top: 22px;
   left: 0;
-  border-radius: 250px;
+  border-radius: 1039px;
 
   @media screen and (min-width: 768px) {
     top: 26px;
+    border-radius: 1228px;
   }
   @media screen and (min-width: 1200px) {
     top: 39px;
+    border-radius: 1852px;
   }
 }
 .feature__list {
