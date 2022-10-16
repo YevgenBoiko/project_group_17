@@ -83,7 +83,7 @@
   width: 280px;
   height: 299px;
   background-color: var(--accent-color);
-  background-image: url(../image/about-images/cow-tablet-1x.png);
+  background-image: url(../image/about-images/cow-mobile-1x.png);
   background-size: contain;
   background-position: 0 20px;
   background-repeat: no-repeat;
@@ -115,7 +115,21 @@
   screen and(min-resolution:192dpi),
   screen and(min-resolution:2dppx) {
   .feature__bg-round {
-    background-image: url(../image/about-images/cow-tablet-2x.png);
+    background-image: url(../image/about-images/cow-mobile-2x.png);
+  }
+}
+@media screen and(min-width:768px) {
+  .feature__bg-round {
+    background-image: url(../image/about-images/cow-tablet-1x.png);
+  }
+  @media screen and(min-device-pixel-ratio: 2),
+    screen and(-webkit-min-device-pixel-ratio: 2),
+    screen and(-o-min-device-pixel-ratio: 2),
+    screen and(min-resolution:192dpi),
+    screen and(min-resolution:2dppx) {
+    .feature__bg-round {
+      background-image: url(../image/about-images/cow-tablet-2x.png);
+    }
   }
 }
 @media screen and(min-width:1200px) {
