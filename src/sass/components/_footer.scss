@@ -105,17 +105,13 @@
   }
 }
 
-.footer-socials__item:hover {
-  cursor: pointer;
+.footer-socials__link:hover,
+.footer-socials__link:focus {
+  fill: #fcfcfc;
 }
 
-svg {
+.footer-socials__link {
   fill: #84a178;
-}
-svg:hover,
-svg:focus,
-svg:active {
-  fill: #fcfcfc;
 }
 
 .footer-tel {
