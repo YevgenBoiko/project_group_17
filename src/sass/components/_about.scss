@@ -180,6 +180,7 @@
     font-size: 16px;
   }
 }
+
 .feature__button {
   display: flex;
   justify-content: center;
@@ -205,6 +206,16 @@
   &:hover {
     background-color: var(--hover-btn);
   }
+  &:focus {
+    background-color: var(--hover-btn);
+    color: var(--modal-bg-color);
+
+    outline: none;
+
+    .button__icon {
+      stroke: var(--modal-bg-color);
+    }
+  }
 
   @media screen and (min-width: 768px) {
     margin-left: 0;
@@ -212,4 +223,6 @@
 }
 .button__icon {
   margin-left: 5px;
+  fill: transparent;
+  stroke: #000;
 }
