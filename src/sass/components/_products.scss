@@ -19,28 +19,6 @@
   padding-top: 60px;
   padding-bottom: 60px;
 }
-.products__lable {
-  font-weight: 800;
-  font-size: 18px;
-  line-height: calc(22 / 18);
-  text-align: center;
-  text-transform: uppercase;
-  color: var(--secondary-text-color);
-
-  margin-bottom: 12px;
-}
-.products__heading {
-  font-family: 'Seymour One', sans-serif;
-  font-weight: 400;
-  font-size: 30px;
-  line-height: calc(38 / 30);
-  text-align: center;
-  letter-spacing: 0.04em;
-  text-transform: uppercase;
-  color: var(--secondary-text-color);
-
-  margin-bottom: 148px;
-}
 .products__list {
   display: flex;
   justify-content: center;
@@ -68,6 +46,29 @@
 .products__item--milkshakes {
   background-color: var(--products-bg-brown);
 }
+//text
+.products__lable {
+  font-weight: 800;
+  font-size: 18px;
+  line-height: calc(22 / 18);
+  text-align: center;
+  text-transform: uppercase;
+  color: var(--secondary-text-color);
+
+  margin-bottom: 12px;
+}
+.products__heading {
+  font-family: 'Seymour One', sans-serif;
+  font-weight: 400;
+  font-size: 30px;
+  line-height: calc(38 / 30);
+  text-align: center;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: var(--secondary-text-color);
+
+  margin-bottom: 148px;
+}
 .products__title {
   font-weight: 700;
   font-size: 20px;
@@ -86,25 +87,24 @@
   text-align: center;
   letter-spacing: 0.04em;
   color: var(--secondary-text-color);
-
-  // margin-bottom: 70px;
 }
 //кнопка
 .products__btn {
   margin-top: auto;
   display: inline-flex;
   align-items: center;
-  width: 100px;
+  justify-content: center;
+  width: 120px;
   height: 40px;
+  cursor: pointer;
 }
 
 .products__btn::before {
   content: '';
-  width: 82px;
-  height: 32px;
-  background-color: aqua;
-  // background-image: url('/src/image/icons.svg#Arrow-Default');
-  // background-size: contain;
+  width: 40px;
+  height: 20px;
+  background-image: url('/src/image/products/Arrow_default.png');
+  background-size: cover;
 }
 
 //цветные круги
