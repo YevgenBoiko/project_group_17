@@ -1,1 +1,9 @@
 @import '~node_modules/modern-normalize/modern-normalize.css';
+a {
+  text-decoration: none;
+  cursor: url(/src/image/product-modal/pointer.png), auto;
+}
+button {
+  cursor: url(/src/image/product-modal/pointer.png), auto;
+  font-family: inherit;
+}
