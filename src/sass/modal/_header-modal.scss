@@ -55,7 +55,7 @@
 
   width: 16px;
   height: 16px;
-
+  border: none;
   padding: 0;
   background-color: transparent;
   transition: outline var(--timing-function);
@@ -73,9 +73,9 @@
   }
 }
 
-.icon-cros {
+.form__icon-close {
   display: inline-block;
-
+  fill: var(--secondary-text-color);
   @media screen and (max-width: 767px) {
     width: 16px;
     height: 16px;
@@ -234,7 +234,7 @@
   border: 1px solid var(--primary-background-color);
   outline-color: var(--hover-btn);
   transition: background-color var(--timing-function);
-  outline-color: var(--timing-function);
+  outline-color: var(--hover-btn);
   &::placeholder {
     color: currentColor;
   }
@@ -289,14 +289,14 @@ border: none;
     color var(--timing-function), outline var(--timing-function);
 
   &:hover {
-    background-color: var(--products-bg-green);
-    outline: 2px solid var(--products-bg-green);
+    background-color: var(--products-bg-yellow);
+    outline: 2px solid var(--products-bg-yellow);
   }
 
   &:focus {
-    background-color: var(--products-bg-green);
+    background-color: var(--products-bg-yellow);
     color: var(--primary-text-color);
-    outline: 2px solid var(--products-bg-green);
+    outline: 2px solid var(---products-bg-yellow);
   }
 
   &:disabled {
