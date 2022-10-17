@@ -220,6 +220,10 @@ max-width: 280px;
   &:nth-child(-n + 4) {
     margin-bottom: 10px;
   }
+  
+  @media screen and(max-width: 414px) {
+    width: 95%;
+  }
 }
 .form__field {
   position: absolute;
@@ -231,7 +235,6 @@ max-width: 280px;
 }
 
 .form__input {
-  font-size: 100%;
   position: relative;
   font-size: 14px;
   line-height: 140%;
