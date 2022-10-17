@@ -1,15 +1,23 @@
 html {
-    box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 *,
 *::before,
 *::after {
-    box-sizing: inherit;
+  box-sizing: inherit;
+}
+a {
+  text-decoration: none;
+  cursor: url(/src/image/product-modal/pointer.png), auto;
+}
+button {
+  cursor: url(/src/image/product-modal/pointer.png), auto;
+  font-family: inherit;
 }
 
 body {
-    font-family: 'Montserrat', sans-serif;
-    margin: 0;
-    font-style: 500;
+  font-family: 'Montserrat', sans-serif;
+  margin: 0;
+  font-style: 500;
 }
