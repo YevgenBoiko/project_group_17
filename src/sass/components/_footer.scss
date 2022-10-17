@@ -20,7 +20,7 @@
 
   color: var(--primary-text-color);
 
-  @media screen and (min-width: 320px) and (max-width: 767px) {
+  @media screen and (max-width: 767px) {
     width: 232px;
     font-size: 18px;
     line-height: 22px;
@@ -52,7 +52,7 @@
   color: var(--primary-text-color);
   margin: 0;
 
-  @media screen and (min-width: 320px) and (max-width: 767px) {
+  @media screen and (max-width: 767px) {
     width: 200px;
 
     font-size: 34px;
@@ -89,7 +89,7 @@
 
   justify-content: end;
 
-  @media screen and (min-width: 320px) and (max-width: 767px) {
+  @media screen and (max-width: 767px) {
     margin-bottom: 38px;
     gap: 28px;
   }
@@ -119,13 +119,15 @@
   fill: #fcfcfc;
 }
 
-.footer-tel {
-  @media screen and (min-width: 320px) and (max-width: 767px) {
+.footer-tel-group__text {
+  color: var(--secondary-text-color);
+  padding-right: 5px;
+
+  @media screen and (max-width: 767px) {
     font-weight: 700;
     font-size: 12px;
     line-height: 186%;
-    text-align: right;
-    color: var(--secondary-text-color);
+
     padding-bottom: 40px;
   }
 
@@ -133,8 +135,6 @@
     font-weight: 700;
     font-size: 14px;
     line-height: 186%;
-    text-align: right;
-    color: var(--secondary-text-color);
   }
 
   @media screen and (min-width: 1200px) {
@@ -142,19 +142,44 @@
     font-size: 16px;
     line-height: 186%;
     letter-spacing: 0.02em;
-    text-align: right;
-    color: var(--secondary-text-color);
   }
 }
 
-.footer-tel-span {
+.footer-tel-group__numb {
   color: var(--white-color);
+
+  text-decoration: none;
+
+  @media screen and (max-width: 767px) {
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 186%;
+  }
+
+  @media screen and (min-width: 768px) {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 186%;
+  }
+
+  @media screen and (min-width: 1200px) {
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 186%;
+    letter-spacing: 0.02em;
+  }
+}
+
+.footer-tel-group {
+  display: flex;
+  align-items: baseline;
+  justify-content: end;
 }
 
 .box {
   border: 1px solid #e1e1e1;
 
-  @media screen and (min-width: 320px) {
+  @media screen and (max-width: 1199px) {
     max-width: 100%;
     padding-left: 0;
     padding-right: 0;
@@ -175,7 +200,7 @@
 
   color: var(--footer-text-color);
 
-  @media screen and (min-width: 320px) and (max-width: 767px) {
+  @media screen and (max-width: 767px) {
     width: 155px;
     font-size: 14px;
     line-height: 152%;
