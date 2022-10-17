@@ -179,6 +179,10 @@
   margin-bottom: 24px;
 }
 
+.ingredients__list{
+  margin-left: 20px;
+  margin-right: 20px;
+}
 .ingredients__item {
   font-family: 'Montserrat', sans-serif;
   font-size: 14px;
@@ -222,6 +226,17 @@ transition: border-color var(--timing-function) ;
   background: rgba(248, 210, 78, 0.1);
   border: 1px solid var(--primary-background-color);
   border-radius: 10px;
+
+  &:focus {
+    outline: none;
+    border-color: var(--accent-color);
+  }
+  &:not(:focus):not(:placeholder-shown):valid {
+    background-color:var(--input-true-bcg) ;
+  }
+  &:not(:focus):not(:placeholder-shown):invalid {
+    background-color: var(--input-false-bcg);
+  }
 }
 
 @media screen and (min-width: 768px) {
@@ -233,7 +248,7 @@ transition: border-color var(--timing-function) ;
 .ingredients-form__message:focus,
 .modal-form-input:focus {
   outline: none;
-  border-color: var(--hover-btn);
+  border-color: var(--accent-color);
 }
 
 .ingredients-form__message {
@@ -275,13 +290,14 @@ transition: border-color var(--timing-function) ;
     font-weight: 600;
     line-height: calc(17 / 14);
     transition: background-color var(--timing-function), color var(--timing-function);
-    &:hover {
+    &:hover,
+    &:focus {
         background-color: var(--hover-btn);
+        border: 1px solid var(--accent-color);
     }
 
     &:focus {
-        background-color: var(--hover-btn);
-        color: var(--social-hv-fc-color);
+        color: var(--primary-text-color);
     }
 }
 
