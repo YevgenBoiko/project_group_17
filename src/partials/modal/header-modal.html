@@ -1,69 +1,90 @@
-<div class="modal ">
-  <div class="modal__window">
-    <button
-      data-modal-close
-      class="modal__btn-x"
-      type="button"
-      data-modal-close
-    >
-      <svg
-        class="modal__icon-x"
-        width="20"
-        ,
-        height="20"
-        id="icon-close"
-        viewBox="0 0 32 32"
-      >
-        <path
-          d="M17.253 16l7.37-7.37c0.13-0.154 0.209-0.354 0.209-0.573 0-0.491-0.398-0.89-0.89-0.89-0.219 0-0.42 0.079-0.575 0.211l0.001-0.001-7.368 7.37-7.37-7.378c-0.159-0.147-0.372-0.237-0.606-0.237-0.493 0-0.893 0.4-0.893 0.893 0 0.234 0.090 0.447 0.237 0.606l-0.001-0.001 7.378 7.37-7.376 7.368c-0.194 0.164-0.316 0.408-0.316 0.68 0 0.491 0.398 0.89 0.89 0.89 0.272 0 0.515-0.122 0.678-0.314l0.001-0.001 7.376-7.37 7.37 7.37c0.155 0.133 0.357 0.214 0.579 0.214 0.491 0 0.89-0.398 0.89-0.89 0-0.222-0.081-0.424-0.215-0.58l0.001 0.001-7.37-7.368z"
-        ></path>
-        >
+<div class="js-overlay-modal" data-modal="1">
+  <form class="form__bay-now" autocomplete="on">
+
+    <button class="form__btn-close js-modal-close" type="button">
+      <svg class="icon-cros" width="20" height="20">
+        <use href="/src/image/icons.svg#close-menu"></use>
       </svg>
-      <use href="/src/image/icons.svg#close-modal"></use>
     </button>
-    <form class="form">
-      <h2 class="form__titel">Buy now</h2>
-      <ul class="group-list list">
-        <li class="group__item group__item--icecream">
-          
-          <div class="group-list__conteiner">
-            <h3 class="group__titel">Ice cream</h3>
-          </div>
-        </li>
-        <li class="group__item group__item--icecoffee">
-          <div class="group-list__conteiner">
-            <h3 class="group__titel">Ice coffee</h3>
-          </div>
-        </li>
-        <li class="group__item group__item--milkshake">
-          <div class="group-list__conteiner">
-            <h3 class="group__titel">Milkshake</h3>
-          </div>
-        </li>
-      </ul>
 
-      <label class="form__label">
-        <div class="form__section">
-        <span class="form__field">Name</span>
-        <input class="form__input" type="text" name="name" placeholder=" " required />
-      </div>
-      </label>
+    <b class="form__title">Buy now</b>
 
-      <label class="form__label">
-        <div class="form__section">
-        <span class="form__field">Phone</span>
-        <input class="form__input" type="tel" name="phone" required />
-      </div>
+    <div class="form__prod">
+      <input class="input__ice-cream visually-hidden" type="checkbox" name="ice_cream" id="ice-cream" />
+      <label class="label__prod label__prod--ice-cream" for="ice-cream">
+        <span class="form__photo-circle  form__photo-circle--ice-cream "></span>
+        <div class="form__photo">
+          <picture>
+            <!-- <source srcset="./images/modal/ice-cream.webp,
+            ./images/modal/ice-cream@2x.webp" type="image/webp">
+            <source srcset="./images/modal/ice-cream.jpg,
+            ./images/modal/ice-cream@2x.jpg" type="image/jpeg" /> -->
+            <img src="/src/image/product-modal/icecram.jpg" alt="ice-cream"  width="132" height="132"/>
+          </picture>
+        </div>
+        <span class="label__text">ice cream</span>
       </label>
+      <input class="input__ice-coffee visually-hidden" 
+      type="checkbox" 
+      name="ice_coffee" 
+      id="ice-coffee"
+      checked="checked"/>
+      <label class="label__prod label__prod--ice-coffee" for="ice-coffee">
+        <span class="form__photo-circle form__photo-circle--ice-coffee"></span>
+        <div class="form__photo">
+          <picture>
+            <!-- <source srcset="./images/modal/ice-coffee.webp,
+            ./images/modal/ice-coffee@2x.webp" type="image/webp">
+            <source srcset="./images/modal/ice-coffee.jpg,
+            ./images/modal/ice-coffee@2x.jpg" type="image/jpeg" /> -->
+            <img src="/src/image/product-modal/icecoffee.jpg" alt="ice coffee"  width="132" height="132"/>
+          </picture>
+        </div>
+        <span class="label__text">ice coffee</span>
+      </label>
+      <input class="input__milkshake visually-hidden" type="checkbox" name="milkshake" id="milkshake" />
+      <label class="label__prod label__prod--milkshake" for="milkshake">
+        <span class="form__photo-circle form__photo-circle--milkshake"></span>
+        <div class="form__photo">
+          <picture>
+            <!-- <source srcset="src/image/product-modal/milkshake.webp,
+            .src/image/product-modal/milkshake@2x.webp" type="image/webp">
+            <source srcset="./images/modal/milkshake.jpg,
+            src/image/product-modal/milkshake@2x.jpg" type="image/jpeg" /> -->
+            <img src="/src/image/product-modal/milkshake.jpg" alt="milkshake"  width="132" height="132"/>
+          </picture>
+        </div>
+        <span class="label__text">milkshake</span>
+      </label>
+    </div>
 
-      <label class="form__label">
-        <div class="form__section">
-        <span class="form__field form__field--margin">Comment</span>
-        <textarea class="form__feedback" name="feedback"></textarea>
-      </div>
-      </label>
-      <button class="modal__btn btn" type="submit">Submit</button>
-    </form>
-  </div>
+    <label class="form__date-in" for="">
+      <input class="form__input" 
+      type="text" 
+      placeholder="Name" 
+      pattern="^[a-zA-Z]+$" 
+      autocomplete
+      required />
+    </label>
+
+    <label class="form__date-in" for="">
+      <input class="form__input" 
+      type="tel" 
+      placeholder="Phone" 
+      pattern="^[ 0-9]+$" 
+      autocomplete
+      required/>
+    </label>
+
+    <label class="form__coment" for="">
+      <textarea class="form__textarea" 
+      name="coment" id="" cols="30" rows="10" 
+      placeholder="Comment"></textarea>
+    </label>
+
+    <button class="form__bay-btn" 
+    type="submit">Submit</button>
+
+  </form>
 </div>
-<script src="/src/sass/modal/js/modal.js"></script>
+<script src="/src/js/modal.js"></script>
