@@ -1,18 +1,18 @@
 .header-section {
   height: 502px;
   background-color: var(--primary-background-color);
-  background-image: url('../image/dots_mob-@1x.png');
+  background-image: url('../image/header/dots_mob-@1x.png');
   background-position: bottom;
   background-repeat: no-repeat;
 
   @media screen and (min-width: 768px) {
     height: 415px;
-    background-image: url('../image/dots_tab-@1x.png');
+    background-image: url('../image/header/dots_tab-@1x.png');
   }
 
   @media screen and (min-width: 1200px) {
     height: 664px;
-    background-image: url('../image/dots_desc-@1x.png');
+    background-image: url('../image/header/dots_desc-@1x.png');
   }
 
   .container {
@@ -92,12 +92,15 @@
     }
 
     &__link {
+      display: block;
       color: var(--primary-text-color);
       text-decoration: none;
+      transition: transform 350ms var(--timing-function);
 
       &:hover,
       &:focus {
         color: var(--accent-color);
+        transform: scale(1.05);
       }
     }
 
@@ -110,6 +113,7 @@
 .buy-btn {
   display: none;
   cursor: pointer;
+  transition: transform 350ms var(--timing-function);
 
   @media screen and (min-width: 768px) {
     display: flex;
@@ -126,11 +130,13 @@
 
   &:hover {
     background: var(--hover-btn);
+    transform: scale(1.05);
   }
 
   &:focus {
     background: var(--hover-btn);
     color: var(--primary-text-color);
+    transform: scale(1.05);
   }
 
   &:focus .btn-icon {
@@ -217,11 +223,13 @@
 
   &:hover {
     border-color: var(--hover-btn);
+    transform: scale(1.05);
   }
 
   &:focus {
     border-color: var(--hover-btn);
     color: var(--primary-text-color);
+    transform: scale(1.05);
   }
 }
 
@@ -231,10 +239,12 @@
 
   &:hover {
     color: var(--hover-btn);
+    transform: scale(1.05);
   }
 
   &:focus {
     color: var(--primary-text-color);
+    transform: scale(1.05);
   }
 }
 
@@ -247,6 +257,7 @@
   display: flex;
   align-items: center;
   text-align: center;
+  transition: transform 350ms var(--timing-function);
 
   @media screen and (min-width: 1200px) {
     font-size: 14px;
@@ -417,15 +428,18 @@
   align-items: center;
 
   &__link {
+    display: block;
     text-decoration: none;
     font-weight: 700;
     font-size: 32px;
     line-height: calc(39 / 32);
     color: var(--primary-text-color);
+    transition: transform 350ms var(--timing-function);
 
     &:hover,
     &:focus {
       color: var(--secondary-text-color);
+      transform: scale(1.05);
     }
 
     @media screen and (min-width: 768px) {
@@ -458,6 +472,7 @@
   color: var(--secondary-text-color);
   align-self: center;
   justify-content: center;
+  transition: transform 350ms var(--timing-function);
 
   @media screen and (min-width: 768px) {
     display: none;
@@ -465,15 +480,18 @@
 
   &:hover {
     background: var(--hover-btn);
+    transform: scale(1.05);
   }
 
   &:focus {
     background: var(--hover-btn);
     color: var(--primary-text-color);
+    transform: scale(1.05);
   }
 
   &:focus .btn-icon {
     fill: var(--primary-text-color);
+    transform: scale(1.05);
   }
 }
 
