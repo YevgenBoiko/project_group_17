@@ -1,0 +1,31 @@
+<div class="location-backdrop is-hidden" data-modal>
+    <div class="location-modal">
+        <button type="button" class="modal-btn-close button" data-modal-close>
+            <svg class="modal-btn-close__icon">
+                <use href="./image/icons.svg#close-modal"></use>
+            </svg>
+        </button>
+        <h2 class="location-modal__text">Our locations</h2>
+        <picture>
+            <source srcset="./image/ourlocations/map.webp 1x, ./image/ourlocations/map@2x.webp 2x"
+                media="(min-width: 768px)" type="image/webp" />
+            <source srcset="./image/ourlocations/map.jpg 1x, ./image/ourlocations/map@2x.jpg 2x"
+                media="(min-width: 768px)" />
+
+            <source srcset="./image/ourlocations/map-mobile.webp 1x, ./image/ourlocations/map-mobile@2x.webp 2x"
+                media="(max-width: 767px)" type="image/webp" />
+            <source srcset="./image/ourlocations/map-mobile.jpg 1x, ./image/ourlocations/map-mobile@2x.jpg 2x"
+                media="(max-width: 767px)" />
+            <img class="location-modal__img" src="./image/ourlocations/map-mobile.jpg" alt="map">
+        </picture>
+        <a class="location-modal__link link" target="_blank" rel="noopener noreferrer"
+            href="https://goo.gl/maps/wtncbETohjdjyUZG6">
+            <span class="location-modal__line location-modal__line-top"></span>
+            <span class="location-modal__line location-modal__line-right"></span>
+            <span class="location-modal__line location-modal__line-bottom"></span>
+            <span class="location-modal__line location-modal__line-left"></span>
+            <span class="location-modal__link-text">
+                Open
+                map</span></a>
+    </div>
+</div>
