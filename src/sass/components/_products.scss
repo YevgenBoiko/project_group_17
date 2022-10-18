@@ -1,0 +1,375 @@
+.products__cont {
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+.products__list {
+  display: flex;
+  justify-content: center;
+  //--mobile screen
+  flex-wrap: wrap;
+  gap: 168px;
+  //--tablet screen
+  @media screen and (min-width: 768px) {
+    flex-wrap: nowrap;
+    gap: 16px;
+  }
+  //--desktop screen
+  @media screen and (min-width: 1200px) {
+    gap: 32px;
+  }
+}
+.products__item {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  transition: transform 250ms var(--timing-function);
+  //--mobile screen
+  width: 280px;
+  height: 420px;
+  padding: 123px 40px 0 40px;
+  border-radius: 24px;
+  //--tablet screen
+  @media screen and (min-width: 768px) {
+    width: 224px;
+    height: 428px;
+    padding: 108px 26px 0 26px;
+  }
+  //--desktop screen
+  @media screen and (min-width: 1200px) {
+    width: 370px;
+    height: 535px;
+    padding: 165px 63px 40px 63px;
+  }
+}
+.products__item:hover,
+.products__item:focus {
+  transform: scale(1.05);
+}
+.products__item--icecream {
+  background-color: var(--products-bg-green);
+}
+.products__item--icecoffee {
+  background-color: var(--products-bg-yellow);
+}
+.products__item--milkshakes {
+  background-color: var(--products-bg-brown);
+}
+//текст
+.products__lable {
+  font-weight: 800;
+  text-align: center;
+  text-transform: uppercase;
+  color: var(--secondary-text-color);
+
+  margin-bottom: 12px;
+  //--mobile screen
+  font-size: 18px;
+  line-height: calc(22 / 18);
+  //--tablet screen
+  @media screen and (min-width: 768px) {
+    font-size: 22px;
+    line-height: calc(27 / 22);
+  }
+  //--desktop screen
+  @media screen and (min-width: 1200px) {
+    font-size: 30px;
+    line-height: calc(37 / 30);
+    letter-spacing: 0.04em;
+  }
+}
+.products__heading {
+  font-family: 'Seymour One', sans-serif;
+  font-weight: 400;
+  text-align: center;
+  text-transform: uppercase;
+  color: var(--secondary-text-color);
+
+  //--mobile screen
+  font-size: 30px;
+  line-height: calc(38 / 30);
+  letter-spacing: 0.04em;
+
+  margin-bottom: 148px;
+  //--tablet screen
+  @media screen and (min-width: 768px) {
+    font-size: 34px;
+    line-height: calc(43 / 34);
+
+    margin-bottom: 200px;
+  }
+  //--desktop screen
+  @media screen and (min-width: 1200px) {
+    font-size: 36px;
+    line-height: calc(45 / 36);
+    letter-spacing: 0.06em;
+
+    margin-bottom: 300px;
+  }
+}
+.products__title {
+  font-weight: 700;
+  text-align: center;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: var(--secondary-text-color);
+
+  //--mobile screen
+  font-size: 20px;
+  line-height: calc(24 / 14);
+
+  margin-bottom: 40px;
+  //--tablet screen
+  @media screen and (min-width: 768px) {
+    font-size: 22px;
+    line-height: calc(27 / 22);
+  }
+  //--desktop screen
+  @media screen and (min-width: 1200px) {
+    font-size: 30px;
+    line-height: calc(37 / 30);
+
+    margin-bottom: 65px;
+  }
+}
+.products__text {
+  font-weight: 400;
+  text-align: center;
+  letter-spacing: 0.04em;
+  color: var(--secondary-text-color);
+  //--mobile screen
+  font-size: 14px;
+  line-height: calc(24 / 14);
+  //--tablet screen
+  @media screen and (min-width: 768px) {
+  }
+  //--desktop screen
+  @media screen and (min-width: 1200px) {
+    font-size: 16px;
+    line-height: calc(28 / 16);
+  }
+}
+//кнопка
+.products__btn {
+  margin-top: auto;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 120px;
+  height: 40px;
+  background-color: transparent;
+  outline: none;
+  border: none;
+  cursor: pointer;
+  transition: background-image 250ms var(--timing-function);
+}
+.products__btn::before {
+  content: '';
+  width: 42px;
+  height: 16px;
+  background-image: url('/src/image/products/Arrow_default.svg');
+  background-size: cover;
+}
+.products__btn:hover::before {
+  content: '';
+  width: 51px;
+  height: 16px;
+  background-image: url('/src/image/products/Arrow_hover.svg');
+  background-size: cover;
+}
+.products__btn:focus::before {
+  content: '';
+  width: 52px;
+  height: 24px;
+  background-image: url('/src/image/products/Arrow_focus.svg');
+  background-size: cover;
+}
+
+//цветные круги
+.products__item::before {
+  content: '';
+  display: inline-flex;
+  border-radius: 50%;
+
+  position: absolute;
+  z-index: 9;
+  top: -100px;
+
+  width: 200px;
+  height: 200px;
+
+  //--mobile screen
+  top: -100px;
+
+  width: 200px;
+  height: 200px;
+  //--tablet screen
+  @media screen and (min-width: 768px) {
+  }
+  //--desktop screen
+  @media screen and (min-width: 1200px) {
+    top: -150px;
+
+    width: 300px;
+    height: 300px;
+  }
+}
+.products__item--icecream::before {
+  content: '';
+  background: linear-gradient(
+      0deg,
+      var(--products-ellipse-green),
+      var(--products-ellipse-green)
+    ),
+    var(--products-ellipse-grey);
+  box-shadow: 0px 5.34219px 20.0332px rgba(10, 136, 23, 0.25);
+}
+.products__item--icecoffee::before {
+  content: '';
+  background: linear-gradient(
+      0deg,
+      var(--products-ellipse-yellow),
+      var(--products-ellipse-yellow)
+    ),
+    var(--products-ellipse-grey);
+  box-shadow: 0px 5.40397px 20.2649px rgba(153, 114, 23, 0.25);
+}
+.products__item--milkshakes::before {
+  content: '';
+  background: linear-gradient(
+      0deg,
+      var(--products-ellipse-brown),
+      var(--products-ellipse-brown)
+    ),
+    var(--products-ellipse-grey);
+  box-shadow: 0px 5.41333px 20.3px rgba(0, 0, 0, 0.25);
+}
+// картинки
+.products__item::after {
+  content: '';
+  display: inline-flex;
+
+  position: absolute;
+  z-index: 10;
+
+  border-radius: 50%;
+  background-size: 100%;
+
+  //--mobile screen
+  top: -110px;
+  width: 200px;
+  height: 200px;
+  //--tablet screen
+  @media screen and (min-width: 768px) {
+  }
+  //--desktop screen
+  @media screen and (min-width: 1200px) {
+    top: -170px;
+    width: 300px;
+    height: 300px;
+  }
+}
+.products__item--icecream::after {
+  content: '';
+
+  //--mobile screen
+  background-image: url('/src/image/products/ice-cream--200х200.png');
+  background-image: -webkit-image-set
+    (url('/src/image/products/ice-coffee--200х200.webp') 1x);
+  @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    background-image: url('/src/image/products/ice-cream--200х200@2x.png');
+    background-image: -webkit-image-set
+      (url('/src/image/products/ice-cream--200х200@2x.webp') 2x);
+  }
+  //--desktop screen
+  @media screen and (min-width: 1200px) {
+    background-image: url('/src/image/products/ice-cream--300х300.png');
+    background-image: -webkit-image-set
+      (url('/src/image/products/ice-cream--300х300.webp') 1x);
+    @media (min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      background-image: url('/src/image/products/ice-cream--300х300@2x.png');
+      background-image: -webkit-image-set
+        (url('/src/image/products/ice-cream--300х300@2x.webp') 2x);
+    }
+  }
+}
+.products__item--icecoffee::after {
+  content: '';
+  //--mobile screen
+  background-image: url('/src/image/products/ice-coffee--200х200.png');
+  background-image: -webkit-image-set
+    (url('/src/image/products/ice-coffee--200х200.webp') 1x);
+  @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    background-image: url('/src/image/products/ice-coffee--200х200@2x.png');
+    background-image: -webkit-image-set
+      (url('/src/image/products/ice-coffee--200х200@2x.webp') 2x);
+  }
+  //--desktop screen
+  @media screen and (min-width: 1200px) {
+    background-image: url('/src/image/products/ice-coffee--300х300.png');
+    background-image: -webkit-image-set
+      (url('/src/image/products/ice-coffee--300х300.webp') 1x);
+    @media (min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      background-image: url('/src/image/products/ice-coffee--300х300@2x.png');
+      background-image: -webkit-image-set
+        (url('/src/image/products/ice-coffee--300х300@2x.webp') 2x);
+    }
+  }
+}
+
+.products__item--milkshakes::after {
+  content: '';
+  //--mobile screen
+  background-image: url('/src/image/products/milkshakes--200х200.png');
+
+  background-image: -webkit-image-set
+    (url('/src/image/products/milkshakes--200х200.webp') 1x);
+
+  @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    background-image: url('/src/image/products/milkshakes--200х200@2x.png');
+    background-image: -webkit-image-set
+      (url('/src/image/products/milkshakes--200х200@2x.webp') 2x);
+  }
+  //--desktop screen
+  @media screen and (min-width: 1200px) {
+    background-image: url('/src/image/products/milkshakes--300х300.png');
+    background-image: -webkit-image-set
+      (url('/src/image/products/milkshakes--300х300.webp') 1x);
+    @media (min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      background-image: url('/src/image/products/milkshakes--300х300@2x.png');
+      background-image: -webkit-image-set
+        (url('/src/image/products/milkshakes--300х300@2x.webp') 2x);
+    }
+  }
+}
+// animation
+.products__item:hover.products__item::after,
+.products__item:focus.products__item::after {
+  animation-name: ball;
+  animation-duration: 1000ms;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
+@keyframes ball {
+  0% {
+    transform: translatey(0);
+  }
+
+  100% {
+    transform: translatey(20px);
+  }
+}

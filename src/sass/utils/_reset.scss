@@ -8,6 +8,13 @@ p {
     margin: 0;
 }
 
+ul,li {
+    margin-top: 0;
+    margin-bottom: 0;
+    list-style: none;
+    padding: 0;
+}
+
 img {
     display: block;
     max-width: 100%;
@@ -19,3 +26,5 @@ img {
     margin: 0;
     padding: 0;
 }
+
+
