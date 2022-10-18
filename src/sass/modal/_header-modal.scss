@@ -1,13 +1,16 @@
 .backdrop {
   width: 100%;
-    height: 100%;
-    background-color: var(--backdrop-bcg-color);
-    opacity: 1;
-    z-index: 10;
-    transition: opacity var(--timing-function),visibility var(--timing-function);
-    position: fixed;
-    top: 0;
-    left: 0;
+  height: 100%;
+  background-color: var(--backdrop-bcg-color);
+  opacity: 1;
+  z-index: 10;
+  transition: opacity var(--timing-function), visibility var(--timing-function);
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+.modal-buy-now__scroll {
+  overflow-y: scroll;
 }
 
 .overlay.active {
@@ -55,8 +58,6 @@
   padding: 0;
   background-color: transparent;
   transition: outline var(--timing-function);
-  
-  
 
   @media screen and (min-width: 768px) {
     right: 20px;
@@ -115,7 +116,6 @@
   border-radius: 16px;
   transition: background-color var(--timing-function),
     outline var(--timing-function);
- 
 
   &--ice-cream {
     border-color: #96af8c;
@@ -231,7 +231,6 @@
   outline-color: var(--hover-btn);
   transition: background-color var(--timing-function);
   outline-color: var(--hover-btn);
-  
 
   @media screen and (min-width: 768px) {
     width: 368px;
@@ -242,13 +241,12 @@
     border-color: var(--accent-color);
   }
   &:not(:focus):not(:placeholder-shown):valid {
-    background-color:var(--input-true-bcg) ;
+    background-color: var(--input-true-bcg);
   }
   &:not(:focus):not(:placeholder-shown):invalid {
     background-color: var(--input-false-bcg);
   }
 }
-
 
 .form__textarea {
   width: 224px;
@@ -262,8 +260,8 @@
   background-color: var(--input-bcg-color);
   border-radius: 10px;
   border: 1px solid var(--primary-background-color);
-  
-  &:focus{
+
+  &:focus {
     outline: none;
     border-color: var(--accent-color);
   }
@@ -283,10 +281,10 @@
 }
 
 .form__buy-btn {
-  font-family:Montserrat, sans-serif;
+  font-family: Montserrat, sans-serif;
   font-weight: 600;
-  width: 114px;
-  height: 42px;
+  min-width: 114px;
+  min-height: 42px;
   border: none;
   border-radius: 10px;
   background-color: var(--default-btn);
@@ -302,7 +300,11 @@
   &:focus {
     color: var(--primary-text-color);
   }
-  &:disabled{
+  &:disabled {
     background-color: var(--footer-text-color);
-}
+  }
+  @media screen and (min-width: 320px) {
+    width: 132px;
+    height: 42px;
+  }
 }
