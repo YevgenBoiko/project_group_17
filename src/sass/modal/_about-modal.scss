@@ -64,6 +64,11 @@
     border-radius: 10px;
 }
 
+.readmore-modal__video {
+    width: 224px;
+    height: 199px;
+}
+
 .readmore-modal__play-icon {
     width: 36px;
     height: 36px;
@@ -87,5 +92,10 @@
 
     .readmore-modal__text {
         font-size: 16px;
+    }
+
+    .readmore-modal__video {
+        width: 448px;
+        height: 205px;
     }
 }
