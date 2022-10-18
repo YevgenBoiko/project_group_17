@@ -221,9 +221,9 @@
 .form__input {
   width: 224px;
   height: 33px;
-
-  padding: 8px 12px;
   
+  padding: 8px 12px;
+  color:var(--secondary-text-color);
   line-height: 1.7;
   background-color: var(--input-bcg-color);
   border-radius: 10px;
@@ -260,16 +260,16 @@
   background-color: var(--input-bcg-color);
   border-radius: 10px;
   border: 1px solid var(--primary-background-color);
-  color:var(--footer-text-color);
+  
   &:focus {
     outline: none;
     border-color: var(--accent-color);
   }
 
-  &::placeholder {
-    color: currentColor;
-  }
-
+  .form__textarea:not(:placeholder-shown) {
+    color: var(--ice-coffee);
+}
+  
   @media screen and (min-width: 768px) {
     width: 368px;
     height: 84px;
@@ -287,6 +287,7 @@ button {
 
 .form__coment {
   margin-bottom: 25px;
+ 
 }
 
 .form__buy-btn {
