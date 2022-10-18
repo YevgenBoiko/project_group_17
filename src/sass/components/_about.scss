@@ -128,6 +128,7 @@
     border-radius: 1852px;
   }
 }
+
 .feature__list {
   width: 220px;
   list-style: none;
@@ -199,16 +200,19 @@
   color: var(--secondary-text-color);
 
   text-align: center;
-  transition: background-color 250ms var(--timing-function);
+  transition: background-color 250ms var(--timing-function),
+    transform 350ms var(--timing-function);
 
   &:hover {
     background-color: var(--hover-btn);
+    transform: scale(1.05);
   }
   &:focus {
     background-color: var(--hover-btn);
     color: var(--modal-bg-color);
 
     outline: none;
+    transform: scale(1.05);
 
     .button__icon {
       stroke: var(--modal-bg-color);
