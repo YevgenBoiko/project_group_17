@@ -223,7 +223,7 @@
   height: 33px;
 
   padding: 8px 12px;
-
+  
   line-height: 1.7;
   background-color: var(--input-bcg-color);
   border-radius: 10px;
@@ -260,7 +260,7 @@
   background-color: var(--input-bcg-color);
   border-radius: 10px;
   border: 1px solid var(--primary-background-color);
-
+  color:var(--footer-text-color);
   &:focus {
     outline: none;
     border-color: var(--accent-color);
@@ -274,6 +274,15 @@
     width: 368px;
     height: 84px;
   }
+}
+
+a {
+  text-decoration: none;
+  cursor: url(/src/image/product-modal/pointer.png), auto;
+}
+button {
+  cursor: url(/src/image/product-modal/pointer.png), auto;
+  font-family: inherit;
 }
 
 .form__coment {
