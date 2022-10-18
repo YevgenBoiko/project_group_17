@@ -4,7 +4,7 @@
 --white-color: #fff;
 --accent-color: #F8D24E;
 --address-text-color:#D6936D;
---time-text-color: #ABABAB;
+--time-text-color: #ababab;
 --footer-text-color:#7A7A7A;
 
  /* Background colors */
@@ -15,7 +15,13 @@
 --products-ellipse-green: rgba(156, 190, 143, 0.7);
 --products-ellipse-yellow: rgba(248, 210, 78, 0.7);
 --products-ellipse-brown: rgba(213, 117, 63, 0.7);
+--backdrop-bcg-color: rgba(0,0,0,.2);
 --products-ellipse-grey: #D9D9D9;
+
+--input-true-bcg:rgba(72, 146, 67, 0.361);
+--input-false-bcg:rgba(202, 87, 106, 0.361);
+--input-bcg-color:#FCF8EB;
+
 --img-ice-cream-shadow-color:rgba(10, 136, 23, 0.25);
 --ingrd-box-numb-shadow-color:rgba(0, 0, 0, 0.25);
 --input-true-bcg:rgba(72, 146, 67, 0.361);
@@ -24,7 +30,7 @@
 /* Modal */
 --modal-bg-color:#FCFCFC;
 --modal-input-bg:rgba(248, 210, 78, 0.1);
---modal-border-color:#84A178;
+--modal-border-color:#F8D24E;
 --modal-ellipse:#9CBE8F;
 
 /* button color */
@@ -34,5 +40,5 @@
 --social-hv-fc-color:#FFFFFF;
 
  /* Timing */
---timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+--timing-function: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }

@@ -3,6 +3,10 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Favicon start-->
+    <link rel="icon" type="image/svg+xml" href="./image/favicon/favicon.svg" />
+    <link rel="icon" type="image/png" href="./image/favicon/favicon.png" />
+    <!-- Favicon end-->
     <title>Page title</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -10,8 +14,26 @@
       href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&family=Roboto:wght@700&family=Seymour+One&display=swap"
       rel="stylesheet"
     />
+    <!-- AOS animation -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
     <link rel="stylesheet" href="./sass/index.scss" />
+
+    <!-- Modal contacts -->
+    <script type="module" src="./js/franchise-modal.js"></script>
+    <script type="module" src="./js/readmore-modal.js"></script>
+    <script type="module" src="./js/ourlocations-modal.js"></script>
+    <script type="module" src="./js/valid-form.js"></script>
+    <script type="module" src="./js/header-modal.js"></script>
+    <!-- Menu -->
+    <script defer src="./js/menu.js"></script>
     <script type="module" src="./index.js"></script>
+    <!-- Customer_reviews -->
+    <script type="module" src="./js/sviper-slider.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
   </head>
   <body>
     <include src="./partials/header.html"></include>
@@ -27,5 +49,7 @@
     <include src="./partials/modal/about-modal.html"></include>
     <include src="./partials/modal/contacts-modal-map.html"></include>
     <include src="./partials/modal/contacts-modal-franchise.html"></include>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="./JS/aos-animate.js"></script>
   </body>
 </html>
