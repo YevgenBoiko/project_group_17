@@ -1,0 +1,175 @@
+<header class="header-section">
+  <div class="container">
+    <picture>
+      <source
+        media="(min-width: 1200px)"
+        srcset="
+          ./image/smiling_ice_cream_desc-@1x.png 1x,
+          ./image/smiling_ice_cream_desc-@2x.png 2x
+        "
+        type="image/png"
+      />
+      <source
+        media="(min-width: 768px)"
+        srcset="
+          ./image/smiling_ice_cream_tab-@1x.png 1x,
+          ./image/smiling_ice_cream_tab-@2x.png 2x
+        "
+        type="image/png"
+      />
+      <source
+        media="(min-width: 480px)"
+        srcset="
+          ./image/smiling_ice_cream_mob-@1x.png 1x,
+          ./image/smiling_ice_cream_mob-@2x.png 2x
+        "
+        type="image/png"
+      />
+      <img
+        class="commercial-img"
+        src="./image/smiling_ice_cream_mob-@1x.png"
+        alt="Ріжок з кульками морозива"
+      />
+    </picture>
+    <div class="header-top">
+      <a class="logo" href="#"
+        ><svg class="logo__icon">
+          <use href="./image/icons.svg#Logo"></use>
+        </svg>
+      </a>
+      <nav>
+        <ul class="nav-list list">
+          <li class="nav-list__item">
+            <a class="nav-list__link" href="#Home">Home</a>
+          </li>
+          <li class="nav-list__item">
+            <a class="nav-list__link" href="#About">How it's made</a>
+          </li>
+          <li class="nav-list__item">
+            <a class="nav-list__link" href="#Products">Our products</a>
+          </li>
+          <li class="nav-list__item">
+            <a class="nav-list__link" href="#Contact">Contact</a>
+          </li>
+        </ul>
+      </nav>
+      <button class="menu-btn js-open-menu">
+        <svg class="menu-icon" class="" width="32" height="32">
+          <use href="./image/icons.svg#Burger-menu"></use>
+        </svg>
+      </button>
+      <button class="buy-btn" type="button">
+        Buy now
+        <svg class="btn-icon" width="15" height="12">
+          <use href="./image/icons.svg#bnt-frame"></use>
+        </svg>
+      </button>
+    </div>
+    <!--block2-->
+    <div class="header-middle">
+      <div class="header-middle__item">
+        <h1 class="header-title">
+          Ice cream made with <span class="title-part">passion</span>
+        </h1>
+        <ul class="title-links">
+          <li class="title-links__item">
+            <a class="link-1" href="#Products">Products</a>
+          </li>
+          <li class="title-links__item">
+            <a class="link-2" href="#About">How it's made</a>
+          </li>
+        </ul>
+      </div>
+      <div class="header-middle__item">
+        <ul class="statistics list">
+          <li class="statistics__item">
+            <p class="statistics__number">16</p>
+            <p class="statistics__text">caffes</p>
+          </li>
+          <li class="text-list__item">
+            <p class="statistics__number">23</p>
+            <p class="statistics__text">food trucks</p>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <!--block3-->
+    <div class="product">
+      <picture>
+        <source
+          media="(min-width: 1200px)"
+          srcset="
+            ./image/ice_cream_balls_desc-@1x.png 1x,
+            ./image/ice_cream_balls_desc-@2x.png 2x
+          "
+          type="image/png"
+        />
+        <source
+          media="(min-width: 768px)"
+          srcset="
+            ./image/ice_cream_balls_tab-@1x.png 1x,
+            ./image/ice_cream_balls_tab-@2x.png 2x
+          "
+          type="image/png"
+        />
+        <img
+          class="product__img"
+          src="./image/ice_cream_balls_tab-@1x.png"
+          alt="Кульки морозива"
+        />
+      </picture>
+      <div class="product__content">
+        <p class="product__text">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+          eiusmod tempor incididunt ut labore et
+        </p>
+        <a class="product__link" href="#">
+          <svg class="product__icon" width="40" height="15">
+            <use href="./image/icons.svg#Arrow-Default"></use>
+          </svg>
+        </a>
+      </div>
+    </div>
+  </div>
+  <div class="menu-container js-menu-container" id="mobile-menu">
+    <div class="drop-wrapper">
+      <a class="logo" href="#">
+        <svg class="logo__icon" width="" height="">
+          <use href="./image/icons.svg#Logo"></use>
+        </svg>
+      </a>
+      <button
+        type="button"
+        class="menu-toggle js-close-menu"
+        aria-expanded="false"
+        aria-controls="mobile-menu"
+      >
+        <svg class="mobile-icon" width="32" height="32">
+          <use class="icon-close" href="./image/icons.svg#close-menu"></use>
+        </svg>
+      </button>
+    </div>
+    <nav>
+      <ul class="mobile-nav list">
+        <li class="mobile-nav__item">
+          <a class="mobile-nav__link" href="#Home">Home</a>
+        </li>
+        <li class="mobile-nav__item">
+          <a class="mobile-nav__link" href="#About">How it's made</a>
+        </li>
+        <li class="mobile-nav__item">
+          <a class="mobile-nav__link" href="#Products">Our products</a>
+        </li>
+        <li class="mobile-nav__item">
+          <a class="mobile-nav__link" href="#Contact">Contact</a>
+        </li>
+      </ul>
+    </nav>
+    <button class="mobile-btn" type="button">
+      Buy now
+      <svg class="btn-icon" width="15" height="12">
+        <use href="./image/icons.svg#bnt-frame"></use>
+      </svg>
+    </button>
+  </div>
+</header>
