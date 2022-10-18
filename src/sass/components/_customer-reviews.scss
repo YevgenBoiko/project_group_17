@@ -1,3 +1,22 @@
+.section-customer-reviews {
+  max-width: 100%;
+  min-height: 515px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .section-customer-reviews {
+    min-height: 432px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .section-customer-reviews {
+    min-height: 464px;
+  }
+}
+
 .slide1 {
   background-image: url(../image/customer_reviews/carousel_slide1_72@1x.jpg);
   @media (min-device-pixel-ratio: 2),
