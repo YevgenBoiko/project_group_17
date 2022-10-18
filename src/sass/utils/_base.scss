@@ -2,15 +2,31 @@ html {
   box-sizing: border-box;
 }
 
-*,
-*::before,
-*::after {
-  box-sizing: inherit;
-}
-
+// *,
+// *::before,
+// *::after {
+//   box-sizing: inherit;
+// }
 
 body {
   font-family: 'Montserrat', sans-serif;
   margin: 0;
   font-style: 500;
+  background-image: url('../image/ice_bgrd_mobile.jpg');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  cursor: url('../image/cursor.png'), default;
+}
+
+@media screen and (min-width:480px){
+  body {
+  background-image: url('../image/ice_bgrd_tablet.jpg');
+  }
+}
+
+@media screen and (min-width:768px) {
+  body {
+    background-image: url('../image/ice_bgrd_desktop.jpg');
+  }
 }
