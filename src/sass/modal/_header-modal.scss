@@ -249,10 +249,6 @@
   }
 }
 
-.form__input:not(:placeholder-shown):required:invalid {
-  background-color: #f59c9c;
-  outline-color: #f37777;
-}
 
 .form__textarea {
   width: 224px;
@@ -306,4 +302,7 @@
   &:focus {
     color: var(--primary-text-color);
   }
+  &:disabled{
+    background-color: var(--footer-text-color);
+}
 }
