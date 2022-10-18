@@ -8,16 +8,16 @@
   position: fixed;
   top: 0;
   left: 0;
+  &.is-hidden {
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+  }
 }
 .modal-buy-now__scroll {
   overflow-y: scroll;
 }
 
-.overlay.active {
-  opacity: 1;
-  visibility: visible;
-  scale: 1;
-}
 
 .form__buy-now {
   position: absolute;
