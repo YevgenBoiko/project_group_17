@@ -1,0 +1,323 @@
+.backdrop {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background-color: var(--backdrop-bcg-color);
+  opacity: 1;
+  z-index: 10;
+  transition: opacity var(--transition-duration-time-func), visibility var(--transition-duration-time-func);
+  &.is-hidden {
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+  }
+}
+.ingredients__scroll {
+  overflow-y: scroll;
+}
+
+.modal-ingredients {
+  z-index: 100;
+  position: absolute;
+  top: 75%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 280px;
+  padding: 28px 20px 32px;
+  background-color: 'Montserrat', sans-serif;
+  border: 2px solid var(--accent-color);
+  border-radius: 10px;
+
+
+}
+
+@media screen and (max-width: 479px) {
+  .modal-ingredients {
+      width: auto;
+      height: auto;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .modal-ingredients {
+      width: 568px;
+  }
+}
+
+.modal-ingredients__close-btn {
+  position: absolute;
+  top: 28px;
+  right: 20px;
+  border: none;
+  background: none;
+  padding: 0;
+  line-height: 0;
+
+  transition: fill var(--transition-duration-time-func);
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+.modal-ingredients__icon{
+  .modal-ingredients__close-btn:hover &,
+  .modal-ingredients__close-btn:focus &{    fill: var(--accent-color);}
+}
+
+@media screen and (min-width: 768px) {
+  .modal-ingredients__close-btn {
+      top: 20px;
+      right: 20px;
+  }
+}
+
+
+.ingredients {
+  margin-bottom: 48px;
+}
+
+.ingredients__title {
+  font-family: 'Seymour One', sans-serif;
+  font-size: 20px;
+  line-height: calc(28 / 20);
+
+  text-align: center;
+  margin-bottom: 22px;
+
+  color: var(--secondary-text-color);
+
+
+}
+
+.ingredients-img {
+  position: relative;
+  width: 132px;
+  height: 138px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 24px;
+  border-radius: 50%;
+  background: linear-gradient(0deg, var(--products-ellipse-green), var(--products-ellipse-green));
+  box-shadow: 0px 5.26027px 19.726px var(--img-ice-cream-shadow-color);
+}
+
+.ingredients-img::after {
+  position: absolute;
+  content: "";
+  width: 132px;
+  height: 138px;
+  background-image: url(/src/image/product-modal/icecream-product.jpg);
+  border-radius: 50%;
+  z-index: 100;
+  bottom: 7px;
+}
+
+.ingredients-box {
+  display: flex;
+  justify-content: center;
+  gap: 9px;
+  margin-bottom: 39px;
+
+}
+
+@media screen and (min-width: 768px) {
+  .ingredients-box {
+      gap: 20px;
+      margin-bottom: 48px;
+  }
+}
+
+.ingredients-box__item {
+  width: 53px;
+  height: 72px;
+  border: 2px solid #9CBE8F;
+  border-radius: 40px;
+}
+
+@media screen and (min-width: 768px) {
+  .ingredients-box__item {
+      width: 65px;
+      height: 90px;
+  }
+}
+
+.ingredients-box__number {
+  width: 43px;
+  height: 43px;
+  border-radius: 50%;
+  margin-top: -2px;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #9cbe8F;
+  box-shadow: 0px 6px 20px var(--ingrd-box-numb-shadow-color);
+  font-weight: 500;
+  font-size: 10px;
+  line-height: calc(28 / 10);
+  color: var(--secondary-text-color);
+}
+
+@media screen and (min-width: 768px) {
+  .ingredients-box__number {
+      width: 53px;
+      height: 53px;
+      font-size: 12px;
+      line-height:calc(28 / 12);
+  }
+}
+
+.ingredients-box__text {
+  font-size: 10px;
+  line-height: calc(12 / 10);
+  justify-content: center;
+  display: flex;
+  color: var(--secondary-text-color);
+}
+
+@media screen and (min-width: 768px) {
+  .ingredients-box__text {
+      font-size: 12px;
+      line-height: calc(15 /12);
+  }
+}
+
+.ingredients-caption {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: calc(28 / 20);
+  display: flex;
+  justify-content: center;
+
+  color: var(--secondary-text-color);
+
+  margin-bottom: 24px;
+}
+
+.ingredients__list{
+  margin-left: 20px;
+  margin-right: 20px;
+}
+.ingredients__item {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 14px;
+  line-height: calc(14.64 / 14);
+  margin-bottom: 11px;
+  display: flex;
+  justify-content: space-between;
+  color: var(--secondary-text-color);
+  &:last-child {
+      margin-bottom: 0;
+  }
+}
+
+.ingredients-form {
+  display: flex;
+  flex-direction: column;
+}
+
+.ingredients-form>div {
+  margin-bottom: 42px;
+}
+
+.ingredients-form__field {
+  display: block;
+  margin-bottom: 16px;
+}
+
+@media screen and (min-width: 768px) {
+  .ingredients-form__field {
+      display: flex;
+      justify-content: center;
+  }
+}
+
+.modal-form-input {
+  width: 100%;
+  height: 42px;
+  padding: 0;
+  padding-left: 11px;
+transition: border-color var(--timing-function) ;
+  background: rgba(248, 210, 78, 0.1);
+  border: 1px solid var(--primary-background-color);
+  border-radius: 10px;
+
+  &:focus {
+    outline: none;
+    border-color: var(--accent-color);
+  }
+  &:not(:focus):not(:placeholder-shown):valid {
+    background-color:var(--input-true-bcg) ;
+  }
+  &:not(:focus):not(:placeholder-shown):invalid {
+    background-color: var(--input-false-bcg);
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .modal-form-input {
+      width: 368px;
+  }
+}
+
+.ingredients-form__message:focus,
+.modal-form-input:focus {
+  outline: none;
+  border-color: var(--accent-color);
+}
+
+.ingredients-form__message {
+  width: 100%;
+  height: 84px;
+  padding: 0;
+  padding-left: 11px;
+  padding-top: 11px;
+  background: rgba(248, 210, 78, 0.1);
+  border: 1px solid var(--primary-background-color);
+  border-radius: 10px;
+  resize: none;
+  transition: border-color var(--timing-function) ;
+}
+
+@media screen and (min-width: 768px) {
+  .ingredients-form__message {
+      width: 368px;
+  }
+}
+.modal-form-input::placeholder,
+.ingredients-form__message::placeholder {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+    line-height: calc(19.6 / 14);
+    color: var(--secondary-text-color);
+}
+
+.ingredients-btn-submit {
+    display: block;
+    min-width: 132px;
+    min-height: 42px;
+    background: var(--accent-color);
+    border: none;
+    border-radius: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 14px;
+    font-weight: 600;
+    line-height: calc(17 / 14);
+    transition: background-color var(--timing-function), color var(--timing-function);
+    &:hover,
+    &:focus {
+        background-color: var(--hover-btn);
+        border: 1px solid var(--accent-color);
+    }
+
+    &:focus {
+        color: var(--primary-text-color);
+    }
+    @media screen and (min-width: 320px) {
+      width: 132px;
+      height: 42px;
+    }
+}
+
