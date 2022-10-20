@@ -28,7 +28,8 @@
   position: fixed;
   top: 0;
   width: 100%;
-  background-color: var(--primary-background-color);
+  // background-color: var(--primary-background-color);
+  background-image: linear-gradient( rgba(132, 161, 120, 1), transparent);
   z-index: 1000;
 }
 
@@ -92,7 +93,6 @@
 
 .nav-list {
   display: none;
-
   @media screen and (min-width: 1200px) {
     display: flex;
     flex-direction: row;
