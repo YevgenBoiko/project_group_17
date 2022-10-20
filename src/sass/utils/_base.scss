@@ -19,6 +19,10 @@ body {
   cursor: url('../image/cursor.png'), default;
 }
 
+body.modal-open {
+  overflow: hidden;
+}
+
 @media screen and (min-width:480px){
   body {
   background-image: url('../image/ice_bgrd_tablet.jpg');

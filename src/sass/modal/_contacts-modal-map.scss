@@ -1,5 +1,5 @@
 .location-backdrop {
-    background-color: rgba(174, 198, 165, 0.3);
+    background-color: var(--backdrop-bcg-color);
     position: fixed;
     top: 0;
     left: 0;
@@ -87,12 +87,19 @@
     display: flex;
     text-decoration: none;
 
-    &:hover,
+    &:hover {
+        background-color: var(--hover-btn);
+        color: var(--secondary-text-color);
+        transition: 0.2s;
+        transition-delay: 0.2s;
+
+    }
+
     &:focus {
         background-color: var(--hover-btn);
         color: var(--primary-text-color);
-        transition: 0.3s;
-        transition-delay: 0.5s;
+        transition: 0.2s;
+        transition-delay: 0.2s;
     }
 }
 
