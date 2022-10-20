@@ -30,7 +30,11 @@
           >
             4g
           </div>
-          <div class="ingredients-box__text">Protein</div>
+          <div class="ingredients-box__text">
+            <p class="overflow-ellipsis">
+            Protein
+            </p>
+          </div>
         </li>
         <li class="ingredients-box__item ingredients-box__item--color-brown">
           <div
@@ -87,6 +91,7 @@
               placeholder="Name"
               required=""
               pattern="[a-zA-Zа-яА-ЯіІїЇ`']+"
+              title="Ivanov Ivan Ivanovich"
               name="user_name"
               minlength="2"
             />
@@ -100,7 +105,7 @@
               placeholder="Phone"
               required=""
               pattern="[0-9]{3}-[0-9]{3}-[0-9]{2}-[0-9]{2}"
-              title="xxx-xxx-xx-xx"
+              title="+38-012-345-67-89"
               name="user_phone"
             />
           </span>

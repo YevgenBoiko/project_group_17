@@ -8,14 +8,14 @@
   opacity: 1;
   z-index: 2000;
 
-  transition: opacity var(--transition-duration-time-func), visibility var(--transition-duration-time-func);
+  transition: opacity var(--transition-duration-time-func),
+    visibility var(--transition-duration-time-func);
 
   &.visually-hidden {
     opacity: 0;
     visibility: hidden;
     pointer-events: none;
   }
-
 }
 
 .ingredients__scroll {
@@ -187,6 +187,30 @@
   }
 }
 
+.overflow-ellipsis {
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+  
+
+  @media screen and (min-width: 768px){
+    & {
+      text-overflow: ellipsis;
+      overflow: hidden;
+      white-space: nowrap;
+      width: 43.74px;
+      height: 15px;
+    }
+  }
+  @media screen and (max-width: 767px){
+    & {
+      text-overflow: ellipsis;
+      overflow: hidden;
+      white-space: nowrap;
+      width: 35px;
+    }
+  }
+}
 .ingredients-caption {
   font-family: 'Montserrat', sans-serif;
   font-weight: 500;
