@@ -17,31 +17,6 @@
   }
 }
 
-.slide1 {
-  background-image: url(../image/customer_reviews/carousel_slide1_72@1x.jpg);
-  @media (min-device-pixel-ratio: 2),
-    (min-resolution: 192dpi),
-    (min-resolution: 2dppx) {
-    background-image: url(../image/customer_reviews/carousel_slide1_144@2x.jpg);
-  }
-}
-.slide2 {
-  background-image: url(../image/customer_reviews/carousel_slide2_72@1x.jpg);
-  @media (min-device-pixel-ratio: 2),
-    (min-resolution: 192dpi),
-    (min-resolution: 2dppx) {
-    background-image: url(../image/customer_reviews/carousel_slide2_144@2x.jpg);
-  }
-}
-.slide3 {
-  background-image: url(../image/customer_reviews/carousel_slide3_72@1x.jpg);
-  @media (min-device-pixel-ratio: 2),
-    (min-resolution: 192dpi),
-    (min-resolution: 2dppx) {
-    background-image: url(../image/customer_reviews/carousel_slide3_144@2x.jpg);
-  }
-}
-
 .section-customer-reviews-list {
   list-style-type: none;
   display: flex;
@@ -106,8 +81,9 @@
 }
 
 .section-customer-reviews-list__comment {
-  min-width: 280px;
-  max-height: auto;
+  display: flex;
+  align-items: center;
+  min-width: 270px;
   border-radius: 24px;
   background-color: rgba(132, 161, 120, 1);
   margin-right: auto;
@@ -118,17 +94,33 @@
   line-height: 1.86;
   padding-right: 39px;
   padding-left: 39px;
-  padding-top: 39px;
-  padding-bottom: 34px;
   font-size: 16px;
   margin-bottom: 36px;
   color: #fcfcfc;
 }
 
+@media screen and (max-width: 388px) {
+  .section-customer-reviews-list__comment {
+    min-height: 310px;
+  }
+}
+
+@media screen and (min-width: 389px) and (max-width: 479px) {
+  .section-customer-reviews-list__comment {
+    min-height: 220px;
+  }
+}
+
+@media screen and (min-width: 480px) and (max-width: 767px) {
+  .section-customer-reviews-list__comment {
+    min-height: 215px;
+  }
+}
+
 @media screen and (min-width: 768px) and (max-width: 1199px) {
   .section-customer-reviews-list__comment {
-    width: 705px;
-    height: auto;
+    width: 700px;
+    height: 165px;
     border-radius: 24px;
     background-color: rgba(132, 161, 120, 1);
     margin-right: auto;
@@ -138,7 +130,6 @@
     line-height: 1.86;
     padding-right: 80px;
     padding-left: 80px;
-    padding-top: 39px;
     font-size: 16px;
     margin-bottom: 36px;
     color: #fcfcfc;
@@ -158,7 +149,6 @@
     line-height: 1.86;
     padding-right: 109px;
     padding-left: 109px;
-    padding-top: 39px;
     font-size: 16px;
     margin-bottom: 36px;
     color: #fcfcfc;

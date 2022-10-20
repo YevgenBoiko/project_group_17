@@ -70,3 +70,28 @@
     background-size: cover;
   }
 }
+
+.slide1 {
+  background-image: url(../image/gallery/carousel_slide1_72@1x.jpg);
+  @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    background-image: url(../image/gallery/carousel_slide1_144@2x.jpg);
+  }
+}
+.slide2 {
+  background-image: url(../image/gallery/carousel_slide2_72@1x.jpg);
+  @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    background-image: url(../image/gallery/carousel_slide2_144@2x.jpg);
+  }
+}
+.slide3 {
+  background-image: url(../image/gallery/carousel_slide3_72@1x.jpg);
+  @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    background-image: url(../image/gallery/carousel_slide3_144@2x.jpg);
+  }
+}
