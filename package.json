@@ -1,8 +1,8 @@
 {
-  "name": "parcel-project-template",
+  "name": "project_group_17",
   "version": "2.0.0",
   "description": "",
-  "homepage": "https://Vitalii-Mart.github.io/project_group_17",
+  "homepage": "https://YevgenBoiko.github.io/project_group_17",
   "scripts": {
     "start": "parcel src/*.html",
     "build": "parcel build src/*.html --public-url /project_group_17/"
